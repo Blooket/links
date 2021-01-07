@@ -33,32 +33,40 @@
 			width:100%;
 			}
 			.return{
-				width:150px;
-				height:45px;
+				width:200px;
+				height:52px;
 				transition:0.3s;
-				margin:5px;
+				position:absolute;
+				left:-15px;
+				top:0;
+				border-bottom-color:rgba(0,0,0,0);
+				border-bottom-width:3px;
+				border-bottom-style:solid;
+				
 
 			}
 			.return:hover{
-				border-radius:5px;
-				border-right-color:#fff;
-				border-right-width:3px;
-				border-right-style:solid;
-				background-color:rgba(0,0,0,0.1);
+				
+				border-bottom-color:#fff;
+				
+			}
+			.return:hover .returntext{
+				opacity:1;
 			}
 			.icon{
 				color:#fff;
-				margin:4%;
+				margin:10px 25px;
 			}
 			.returntext{
 				color:#fff;
 				font-family:Nunito;
-				font-size:170%;
 				vertical-align:middle;
 				display:inline-block;
 				position:fixed;
-				top:-1%;
+				top:-15px;
 				left:65px;
+				opacity:0;
+				transition:0.3s;
 			}
 			.item{
 			display:flex;
